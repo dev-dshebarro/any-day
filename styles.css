@@ -1,12 +1,13 @@
 body {
   margin: 0;
-  min-width: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
+  width: 100%;
   font-family: "Poppins", sans-serif;
   background: radial-gradient(circle at top, #4c1d95, #0f172a 60%);
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .container {
@@ -91,9 +92,40 @@ body {
     line-height: 2;
     white-space: pre-line;
 }
-.assintura {
+.assinatura {
     margin-top: 40px;
     text-align: right;
     color: #ff9dfc;
     font-size:1.5rem;
+}
+
+@media (max-width: 768px) {
+  body {
+    align-items: flex-start;
+    padding: 20px 0;
+  }
+  
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+  }
+  
+  .perfil {
+    width: 100%;
+    max-width: 350px;
+    box-sizing: border-box;
+  }
+  
+  .carta {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25px;
+  }
+  
+  #texto {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
 }

@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  min-width: 100vh;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at top, #4c1d95, #0f172a 60%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 95%;
+  max-width: 1400px;
+
+  display: flex;
+  gap: 30px;
+
+  z-index: 10;
+}
+
+.perfil {
+  width: 350px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  backdrop-filter: blur(10px);
+
+  border-radius: 30px;
+
+  padding: 25px;
+
+  text-align: center;
+
+  box-shadow:
+    0 0 20px #c026d3,
+    0 0 40px rgba(192, 38, 211, 0.3);
+}
+.perfil img {
+  width: 100%;
+  border-radius: 20px;
+  border: 3px solid #e879f9;
+}
+.perfil h2{
+    color: #ff9dfc;
+    font-size:3rem;
+    margin-top:15px;
+}
+
+.perfil p{
+
+    color:white;
+}
+
+.frase{
+
+    margin-top:20px;
+
+    color:#ddd;
+
+    line-height:1.8;
+}
+
+.carta{
+
+    flex:1;
+
+    background:rgba(0,0,0,.35);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:30px;
+
+    padding:40px;
+
+    color:white;
+
+    box-shadow:
+    0 0 20px rgba(255,255,255,.1);
+}
+
+.carta h1 {
+    color:#ffb4ff;
+    text-align:center;
+    margin-bottom:30px;
+}
+#texto {
+    font-size: 1.3rem;
+    line-height: 2;
+    white-space: pre-line;
+}
+.assintura {
+    margin-top: 40px;
+    text-align: right;
+    color: #ff9dfc;
+    font-size:1.5rem;
+}
